@@ -1,0 +1,69 @@
+/* src/components/Cart.css */
+.cart {
+  flex: 2;
+  margin-right: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.cart h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cart-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Desktop (1440px) */
+@media only screen and (max-width: 1440px) {
+  .cart {
+    margin-right: 15px;
+    padding: 15px;
+  }
+
+  .cart h2 {
+    font-size: 22px;
+  }
+
+  .cart-items {
+    gap: 15px;
+  }
+}
+
+/* Tablet (786px) */
+@media only screen and (max-width: 786px) {
+  .cart {
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  .cart h2 {
+    font-size: 20px;
+  }
+
+  .cart-items {
+    gap: 10px;
+    flex-direction: column; /* Stack items vertically */
+  }
+}
+
+/* Mobile (480px) */
+@media only screen and (max-width: 480px) {
+  .cart {
+    margin-right: 5px;
+    padding: 5px;
+  }
+
+  .cart h2 {
+    font-size: 18px;
+  }
+
+  .cart-items {
+    gap: 5px;
+    flex-direction: column; /* Stack items vertically */
+  }
+}

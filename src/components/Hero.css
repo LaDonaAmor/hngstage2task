@@ -1,0 +1,103 @@
+/* src/components/Hero.css */
+
+.hero {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 2px; 
+     margin: 0px 50px;
+   }
+   
+   .hero-content {
+     max-width: 50%;
+   }
+   
+   .hero-content h1 {
+     font-size: 64px;
+     margin: -200px 20px 20px;
+     text-align: left;
+   }
+   
+   .hero-content p {
+     font-size: 18px;
+     margin: 0px 30px 20px;
+     text-align: left;
+   }
+   
+   .hero-content button {
+     padding: 15px 30px;
+     margin-left: -425px;
+     font-size: 18px;
+     background-color: #000;
+     color: #fff;
+     border: none;
+     cursor: pointer;
+   }
+   
+   .hero-content button:hover {
+     background-color: #333;
+   }
+   
+   .hero-image img {
+     max-width: 150%;
+     height: auto;
+     margin-left: -370px;
+   }
+   
+   /* Responsive design adjustments */
+  /* Media Queries for Tablets (max-width: 768px) */
+  @media (max-width: 1082px) {
+    .hero-content button {
+      margin-left: -5px; /* Remove left margin for button */
+      margin-top: 20px; /* Add top margin for button */
+    }
+  }
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column-reverse; /* Reverse flex-direction for mobile-first layout */
+      text-align: center; /* Center-align content */
+    }
+  
+    .hero-content {
+      max-width: 100%; /* Full width for content on tablets */
+    }
+  
+    .hero-content h1 {
+      font-size: 48px; /* Adjust font size for tablets */
+      margin: 20px 20px; /* Adjust margins */
+    }
+  
+    .hero-content button {
+      margin-left: 0; /* Remove left margin for button */
+      margin-top: 20px; /* Add top margin for button */
+    }
+  
+    .hero-image img {
+      max-width: 100%; /* Full width for image on tablets */
+      margin-left: 0; /* Center-align image */
+    }
+  }
+  
+  /* Media Queries for Mobile devices (max-width: 480px) */
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 36px; /* Adjust font size for mobile */
+      margin: 20px 20px; /* Adjust margins */
+    }
+  
+    .hero-content p {
+      font-size: 16px; /* Adjust font size for mobile */
+      margin: 0px 20px 20px; /* Adjust margins */
+    }
+  
+    .hero-content button {
+      padding: 12px 24px; /* Adjust padding for button on mobile */
+      font-size: 16px; /* Adjust font size for button on mobile */
+      margin-top: 20px; /* Add top margin for button */
+    }
+  
+    .hero-image img {
+      max-width: 100%; /* Full width for image on mobile */
+      margin-left: 0; /* Center-align image */
+    }
+  }
