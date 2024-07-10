@@ -53,6 +53,32 @@
       margin-top: 20px; /* Add top margin for button */
     }
   }
+  
+  @media (max-width: 990px) {
+    .hero {
+      flex-direction: column-reverse; /* Reverse flex-direction for mobile-first layout */
+      text-align: center; /* Center-align content */
+    }
+  
+    .hero-content {
+      max-width: 100%; /* Full width for content on tablets */
+    }
+  
+    .hero-content h1 {
+      font-size: 48px; /* Adjust font size for tablets */
+      margin: 20px 20px; /* Adjust margins */
+    }
+  
+    .hero-content button {
+      margin-left: 0; /* Remove left margin for button */
+      margin-top: 20px; /* Add top margin for button */
+    }
+  
+    .hero-image img {
+      max-width: 100%; /* Full width for image on tablets */
+      margin-left: 0; /* Center-align image */
+    }
+  }
   @media (max-width: 768px) {
     .hero {
       flex-direction: column-reverse; /* Reverse flex-direction for mobile-first layout */

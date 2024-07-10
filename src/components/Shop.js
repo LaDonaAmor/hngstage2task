@@ -28,9 +28,9 @@ const Shop = () => {
   const genders = ['Both', 'Male', 'Female'];
 
   const categoryProducts = [
-    { id: 1, brand: 'Nike', name: 'Air Max', price: 'N60,000', color: '#735CFF', image: image1, type: 'Popular' },
+    { id: 1, brand: 'Nike', name: 'Air Max', price: '₦60,000', color: '#735CFF', image: image1, type: 'Popular' },
     { id: 2, brand: 'Adidas', name: 'Ultra Boost', price: 'N75,000', color: '#8F8F8F', image: image2, type: 'Popular' },
-    { id: 3, brand: 'Nike', name: 'Air Max', price: 'N63,999', color: '#E5E92E', image: image3, type: 'Popular' },
+    { id: 3, brand: 'Nike', name: 'Air Max', price: 'N58,000', color: '#E5E92E', image: image3, type: 'Popular' },
     { id: 4, brand: 'Nike', name: 'Air Max', price: 'N63,999', color: '#D55CFF', image: image4, type: 'Popular' },
     { id: 5, brand: 'Nike', name: 'Air Max', price: 'N63,999', color: '#FF9292', image: image5, type: 'Popular' },
     { id: 6, brand: 'Nike', name: 'Air Max', price: 'N63,999', color: '#36D199', image: image6, type: 'Popular' },

@@ -1,3 +1,4 @@
+/* Base styles for cart item */
 .cart-item {
   display: flex;
   align-items: center;
@@ -6,7 +7,7 @@
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 15px;
-  position: relative;
+  position: relative; /* For positioning the remove button */
 }
 
 .cart-item-image {
@@ -112,8 +113,8 @@
 /* Tablet (786px) */
 @media only screen and (max-width: 786px) {
   .cart-item {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: row; /* Ensures the flex direction is row */
+    flex-wrap: nowrap; /* Prevent wrapping */
   }
 
   .cart-item-image {
@@ -124,16 +125,16 @@
   .cart-item-details {
     margin-left: 10px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column; /* Keep column layout */
+    flex-wrap: nowrap; /* Prevent wrapping */
   }
 
   .cart-item-info {
-    flex: 1 1 100%;
+    flex: 1 1 auto;
   }
 
   .cart-item-quantity {
-    flex: 1 1 100%;
+    flex: 1 1 auto;
     justify-content: flex-start;
   }
 
@@ -159,8 +160,8 @@
 /* Mobile (480px) */
 @media only screen and (max-width: 480px) {
   .cart-item {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: row; /* Ensures the flex direction is row */
+    flex-wrap: nowrap; /* Prevent wrapping */
     padding: 5px;
   }
 
@@ -173,32 +174,25 @@
   .cart-item-details {
     margin-left: 10px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column; /* Keep column layout */
+    flex-wrap: nowrap; /* Prevent wrapping */
   }
 
   .cart-item-info {
-    flex: 1 1 100%;
+    flex: 1 1 auto;
   }
 
   .cart-item-quantity {
-    flex: 1 1 100%;
+    flex: 1 1 auto;
     justify-content: flex-start;
   }
 
-  .cart-item-brand {
-    font-size: 12px;
-    margin-top: -5px;
-  }
-
   .cart-item-name {
-    font-size: 16px;
-    margin: -10px 0 0 20px;
+    font-size: 14px;
   }
 
   .cart-item-price {
-    font-size: 16px;
-    margin: -5px 0 0 20px;
+    font-size: 12px;
   }
 
   .cart-item-quantity button {
