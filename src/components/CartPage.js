@@ -34,7 +34,7 @@ const CartPage = () => {
     <div className="cart-page">
       <div className="cart-items-section">
         <div className="cart-header">
-          <Link to="/product/1" className="back-arrow"><img src={backArrow} alt='back'></img></Link>
+          <Link to="/shop" className="back-arrow"><img src={backArrow} alt='back'></img></Link>
           <h2>Shopping Cart <span className="cart-count">{cartItems.length}</span></h2>
         </div>
         <div className="cart-items">

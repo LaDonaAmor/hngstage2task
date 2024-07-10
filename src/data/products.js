@@ -49,7 +49,7 @@ const Product = ({ id, brand, name, price, color, image, onClick, brandFontSize,
         <img src={isFavorited ? filledHeart : outlineHeart} alt="fav" />
       </button>
       <img src={image} alt={`${brand} ${name}`} className="product-image" />
-      <Link to={`/product/${id}`} className="details-btn">
+      <Link to={`/cart`} className="details-btn">
         <img src={arrowRightSvg} alt="arrow-right" />
       </Link>
     </div>

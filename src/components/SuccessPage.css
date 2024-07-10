@@ -1,90 +1,113 @@
 /* SuccessPage.css */
 
-body {
-     margin: 0;
-     font-family: Arial, sans-serif;
-     background-color: #f5f5f5;
-   }
-   
-   .success-page-container {
-     text-align: center;
-   }
-   
-   .header {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 10px 20px;
-     background-color: #000;
-   }
-   
-   .logo img {
-     height: 40px;
-   }
-   
-   .nav-links {
-     display: flex;
-     gap: 20px;
-   }
-   
-   .nav-link {
-     color: #fff;
-     text-decoration: none;
-     font-size: 18px;
-   }
-   
-   .nav-link:hover {
-     text-decoration: underline;
-   }
-   
-   .nav-icons {
-     display: flex;
-     gap: 10px;
-   }
-   
-   .nav-icon img {
-     height: 24px;
-   }
-   
-   .main-content {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     height: calc(100vh - 80px);
-     padding: 20px;
-     background-color: #f5f5f5;
-   }
-   
-   .success-image {
-     width: 35%;
-     height: auto;
-     margin-bottom: 5px;
-     margin-top: -90px;
-   }
-   
-   .success-title {
-     font-size: 48px;
-     color: #000;
-     margin-top: -90px;
-   }
-   
-   .success-message {
-     font-size: 24px;
-     color: #7d7d7d;
-     margin: -10px 0 20px;
-   }
-   
-   .explore-more-button {
-     padding: 10px 20px;
-     background-color: #000;
-     color: #fff;
-     text-decoration: none;
-     border-radius: 10px;
-     font-size: 18px;
-   }
-   
-   .explore-more-button:hover {
-     background-color: #444;
-   }
-   
+.success-page-container {
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+  padding: 5px;
+}
+
+.success-image {
+  width: 35%;
+  height: auto;
+  margin-bottom: 5px;
+  margin-top: -90px;
+}
+
+.success-title {
+  font-size: 52px;
+  color: #000;
+  margin-top: -90px;
+  font-family: 'Lemonada', cursive; /* For using the Lemonada font */
+  font-weight: 800;
+}
+
+.success-message {
+  font-size: 24px;
+  color: #7d7d7d;
+  margin: -35px 0 20px;
+}
+
+.explore-more-button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.explore-more-button:hover {
+  background-color: #444;
+}
+
+/* Media Queries */
+
+/* Desktop (1440px) */
+@media only screen and (max-width: 1440px) {
+  .success-image {
+    width: 30%;
+  }
+
+  .success-title {
+    font-size: 40px;
+  }
+
+  .success-message {
+    font-size: 20px;
+  }
+
+  .explore-more-button {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+}
+
+/* Tablet (786px) */
+@media only screen and (max-width: 786px) {
+  .success-image {
+    width: 40%;
+  }
+
+  .success-title {
+    font-size: 36px;
+  }
+
+  .success-message {
+    font-size: 18px;
+  }
+
+  .explore-more-button {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+}
+
+/* Mobile (480px) */
+@media only screen and (max-width: 480px) {
+  .success-image {
+    width: 50%;
+    margin-top: -70px;
+  }
+
+  .success-title {
+    font-size: 32px;
+    margin-top: -70px;
+  }
+
+  .success-message {
+    font-size: 16px;
+    margin: -40px 0 15px;
+  }
+
+  .explore-more-button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}

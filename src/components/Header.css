@@ -1,5 +1,3 @@
-/* src/components/Header.css */
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -25,15 +23,32 @@ nav ul li a {
   color: #ccc;
   text-decoration: none;
   font-size: 18px;
+  position: relative;
 }
 
 nav ul li a:hover {
   color: #fff;
 }
 
+nav ul li a.active {
+  color: #fff;
+}
+
+nav ul li a.active::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -2px;
+  left: 15px;
+}
+
 .icons {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .icon-button {
@@ -44,10 +59,21 @@ nav ul li a:hover {
   font-size: 16px;
   cursor: pointer;
   height: auto;
+  position: relative;
 }
 
 .icon-button:hover {
   color: #fff;
+}
+
+.cart-notification {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  border-radius: 50%;
 }
 
 .hamburger {
@@ -61,6 +87,10 @@ nav ul li a:hover {
 
 .hamburger:hover {
   color: #fff;
+}
+
+.hidden-mobile {
+  display: none;
 }
 
 /* Media Queries */
@@ -99,7 +129,13 @@ nav ul li a:hover {
     display: none;
   }
 
-  .icons .icon-button:first-child {
+  .icons .icon-button:nth-child(2) {
     display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .hidden-mobile {
+    display: inline-block;
   }
 }
