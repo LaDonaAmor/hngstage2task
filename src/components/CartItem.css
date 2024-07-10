@@ -6,7 +6,7 @@
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 15px;
-  position: relative; /* For positioning the remove button */
+  position: relative;
 }
 
 .cart-item-image {
@@ -186,12 +186,19 @@
     justify-content: flex-start;
   }
 
+  .cart-item-brand {
+    font-size: 12px;
+    margin-top: -5px;
+  }
+
   .cart-item-name {
-    font-size: 14px;
+    font-size: 16px;
+    margin: -10px 0 0 20px;
   }
 
   .cart-item-price {
-    font-size: 12px;
+    font-size: 16px;
+    margin: -5px 0 0 20px;
   }
 
   .cart-item-quantity button {
