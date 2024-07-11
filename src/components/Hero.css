@@ -30,6 +30,7 @@
      font-size: 18px;
      background-color: #000;
      color: #fff;
+     box-shadow: 0 8px 10px 0 rgb(194, 193, 193);
      border: none;
      cursor: pointer;
      border-radius: 15px;
