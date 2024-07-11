@@ -6,6 +6,7 @@
      align-items: center;
      gap: 2px; 
      margin: 0px 50px;
+     font-family: 'Outfit', sans-serif;
    }
    
    .hero-content {
@@ -15,6 +16,7 @@
    .hero-content h1 {
      font-size: 64px;
      margin: -200px 20px 20px;
+     font-weight: 100;
      text-align: left;
    }
    

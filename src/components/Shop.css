@@ -1,5 +1,6 @@
 .shop-container {
   padding: 20px;
+  font-family: 'Outfit', sans-serif;
 }
 
 .category-filter, .gender-filter {
@@ -72,10 +73,9 @@
 .product-card {
   min-width: 240px;
   width: 100%;
-  height: 260px;
+  height: 270px;
   position: relative;
   border-radius: 15px;
-  margin-right: 20px;
 }
 
 .product-card:hover {
