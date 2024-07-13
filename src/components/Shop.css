@@ -1,3 +1,4 @@
+
 .shop-container {
   padding: 20px;
   font-family: 'Outfit', sans-serif;
@@ -26,7 +27,6 @@
 .gender-filter button.active {
   font-weight: bold;
   color: #000;
-  background-color: #f5f5f5;
   border: none;
 }
 
@@ -61,33 +61,34 @@
 .product-grid {
   display: flex;
   overflow-x: auto;
-  gap: 20px;
+  gap: 44px;
   margin-bottom: 20px;
 }
 
 .product-grid.horizontal-scroll {
   display: flex;
   flex-wrap: nowrap;
+  height: 350px;
+}
+
+.product-grid.horizontal-scroll {
+  display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Snap effect */
+  padding: 20px 0; /* Add some vertical padding */
 }
 
 .product-card {
-  min-width: 240px;
-  width: 100%;
-  height: 270px;
+  border-radius: 20px;
   position: relative;
-  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  min-width: 240px;
+  height: 320px;
 }
 
 .product-card:hover {
   transform: translateY(-5px);
-}
-
-.product-image {
-  width:  100%;
-  height: auto;
-  position: absolute;
-  left: 50px;
-  top: 80px;
 }
 
 .product-info {
@@ -96,6 +97,7 @@
   left: 20px;
   color: white;
 }
+
 
 /* Other existing styles remain unchanged */
 

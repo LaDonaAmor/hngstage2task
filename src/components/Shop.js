@@ -116,7 +116,7 @@ const Shop = () => {
           <Product 
             key={product.id} 
             {...product} 
-            onClick={() => handleProductClick(product.id)} />
+            onClick={() => handleProductClick(`product.id`)} />
         ))}
       </div>
     </div>

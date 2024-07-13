@@ -106,14 +106,14 @@ form {
   }
   
   .submit-button {
-    margin-right: 535px; /* Remove right margin */
+    margin-right: 525px; /* Remove right margin */
   }
 }
 
 /* Mobile (480px) */
 @media only screen and (max-width: 480px) {
   .submit-button {
-    margin-right: 235px; /*  right margin */
+    margin-right: 222px; /*  right margin */
     margin-top: 20px; /* Add some space above the button */
   }
 }

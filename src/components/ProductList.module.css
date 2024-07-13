@@ -1,0 +1,113 @@
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 15px;
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden; /* Ensure no overflow on the page */
+}
+
+.featuredContainer {
+  flex: 1;
+  margin: 0 50px 0 -15px;
+}
+
+.rightContainer {
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+  margin: 70px -50px 0 5px;
+  overflow-x: auto; /* Prevent horizontal overflow in right container */
+}
+
+.popularHeader {
+  display: flex;
+  align-items: center;
+  margin-top: -25px; /* Space between header and product list */
+}
+
+.header {
+  margin-top: 0.9rem;
+}
+
+.shopLink {
+  text-decoration: none;
+  color: #735CFF;
+  font-size: 20px; /* Adjust font size as needed */
+  font-weight: bold;
+}
+
+.arrow {
+  margin-right: 5px; /* Space between arrow and text */
+}
+
+.horizontalScroll {
+  display: flex;
+  gap: 44px;
+  height: 350px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 20px 0;
+  justify-content: space-between;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px; /* Space between products and filters */
+  position: absolute;
+  top: 600px;
+}
+
+.filterGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.filterGroup span {
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+}
+
+.filterGroup button {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #777;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.filterGroup button.active {
+  font-weight: bold;
+  color: #000;
+  border: none;
+}
+
+.filterGroup button::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.filterGroup button.active::after {
+  width: 25%;
+}
+
+.filterGroup button:hover {
+  color: #000;
+}

@@ -5,6 +5,7 @@ import arrowRightSvg from '../assets/svg/arrowRight.svg';
 import outlineHeart from '../assets/svg/outline-heart.svg';
 import filledHeart from '../assets/svg/filled-heart.svg'; // Assuming you have a filled heart SVG
 
+
 const Product = ({ id, brand, name, price, color, image, onClick, brandFontSize, nameFontSize, priceFontSize }) => {
   const [isFavorited, setIsFavorited] = useState(false);
 
@@ -14,7 +15,7 @@ const Product = ({ id, brand, name, price, color, image, onClick, brandFontSize,
     top: '20px',
     left: '-80px',
   };
-
+ 
   const brandStyle = {
     fontSize: brandFontSize || '12px', // Default font size for brand
   };
@@ -33,7 +34,14 @@ const Product = ({ id, brand, name, price, color, image, onClick, brandFontSize,
     marginTop: '2px',
     marginRight: '52px', // Adjusted margin for spacing
   };
-
+  
+  const imageStyle = {
+    width: '140%',  // Set the desired width
+    height: 'auto',  // Maintain aspect ratio
+    position: 'absolute',
+    right: '-40px',
+    top: '15px',
+  }
   const handleFavoriteClick = () => {
     setIsFavorited(!isFavorited);
   };
@@ -48,8 +56,8 @@ const Product = ({ id, brand, name, price, color, image, onClick, brandFontSize,
       <button className="favorite-btn" onClick={handleFavoriteClick}>
         <img src={isFavorited ? filledHeart : outlineHeart} alt="fav" />
       </button>
-      <img src={image} alt={`${brand} ${name}`} className="product-image" />
-      <Link to={`/cart`} className="details-btn">
+      <img src={image} alt={name} className={image} style={imageStyle}/>
+      <Link to={`/productlist`} className="details-btn">
         <img src={arrowRightSvg} alt="arrow-right" />
       </Link>
     </div>

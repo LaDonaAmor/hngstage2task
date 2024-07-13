@@ -13,6 +13,8 @@
 nav ul {
   display: flex;
   list-style: none;
+  justify-content: space-between;
+  gap: 16px;
 }
 
 nav ul li {
